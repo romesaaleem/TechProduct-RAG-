@@ -1,13 +1,25 @@
+Here is your **fully cleaned, structured, GitHub-ready README.md (final version)** with:
 
-**TechProduct_RAG_System**
+* Clickable Table of Contents
+* Clean professional formatting
+* Architecture diagram section added
+* No `git clone` (as requested)
+* Recruiter-ready structure
+* Proper headings + flow
+
+---
+
+# 📌 TechProduct_RAG_System
 
 An AI-powered ecommerce chatbot built using **Retrieval-Augmented Generation (RAG)** architecture for intelligent product search and context-aware responses.
 
-**Table of Contents**
+---
+
+# 📑 Table of Contents
 
 * [Overview](#overview)
+* [System Architecture](#system-architecture)
 * [Problem Statement](#problem-statement)
-* [Project Architecture](#project-architecture)
 * [Features](#features)
 * [Technologies Used](#technologies-used)
 * [Project Files](#project-files)
@@ -21,55 +33,95 @@ An AI-powered ecommerce chatbot built using **Retrieval-Augmented Generation (RA
 * [Project Configuration Files](#project-configuration-files)
 * [Author](#author)
 
-**Overview**
+---
+
+# 📖 Overview
 
 **TechProduct_RAG_System** is an AI-powered ecommerce assistant that enables users to search and retrieve product information using natural language queries.
 
-Instead of keyword-based search, it uses **RAG (Retrieval-Augmented Generation)** with embeddings to understand intent and deliver context-aware responses.
+Instead of traditional keyword-based search, it uses **RAG (Retrieval-Augmented Generation)** with embeddings to understand user intent and deliver context-aware responses.
 
+The system improves product discovery by combining:
 
-**Problem Statement**
+* Semantic search
+* Vector database (ChromaDB)
+* Large Language Model (LLM)
+
+---
+
+# 📊 System Architecture
+
+### 💡 How the system works in simple terms:
+
+A user asks a question → system retrieves relevant products → AI generates final answer.
+
+---
+
+### 🧠 Architecture Diagram
+
+👉 Add your image here:
+
+```md id="arch1"
+![RAG System Architecture](assets/rag_architecture.png)
+```
+
+📌 Suggested placement:
+`assets/rag_architecture.png`
+
+---
+
+### ⚙ Workflow
+
+1. Load product catalog (CSV)
+2. Convert data into LangChain documents
+3. Split into chunks
+4. Generate embeddings (Hugging Face)
+5. Store embeddings in ChromaDB
+6. Perform similarity search
+7. Retrieve relevant context
+8. Pass to Groq LLM
+9. Generate response
+10. Display via Gradio UI
+
+---
+
+# ❗ Problem Statement
 
 Traditional ecommerce search systems:
 
-* Fail to understand intent
-* Depend only on keywords
-* Provide irrelevant results for complex queries
+* Fail to understand user intent
+* Depend only on keyword matching
+* Produce irrelevant results for complex queries
 
-This project solves it using **semantic AI search**.
+### This project solves it using:
 
+✔ Semantic understanding
+✔ Context-aware AI responses
+✔ RAG-based architecture
 
-**Project Architecture**
+---
 
-**Workflow:**
-
-1. Load product catalog (CSV)
-2. Convert into LangChain documents
-3. Split into chunks
-4. Generate embeddings (Hugging Face)
-5. Store in ChromaDB
-6. Retrieve relevant chunks via similarity search
-7. Pass context to Groq LLM
-8. Generate response
-9. Show in Gradio UI
-
-**Features**
+# ✨ Features
 
 * AI-powered ecommerce chatbot
-* Semantic search (not keyword-based)
-* RAG pipeline implementation
+* Semantic product search
+* Retrieval-Augmented Generation (RAG)
 * Context-aware responses
 * ChromaDB vector database
 * Hugging Face embeddings
 * Groq LLM integration
-* Gradio chatbot UI
-* Real-time responses
+* Gradio chatbot interface
+* Real-time AI responses
 
-**Technologies Used**
+---
 
-**Language:** Python
+# 🛠 Technologies Used
 
-**Libraries:**
+### Programming Language
+
+* Python
+
+### Libraries & Frameworks
 
 * LangChain
 * ChromaDB
@@ -79,97 +131,106 @@ This project solves it using **semantic AI search**.
 * Pandas
 * python-dotenv
 
-**Models:**
+### Models
 
-* llama-3.3-70b-versatile
-* all-MiniLM-L6-v2
+* **LLM:** llama-3.3-70b-versatile
+* **Embeddings:** all-MiniLM-L6-v2
 
-**Project Files**
+---
 
-### `rag_backend.py`
+# 📂 Project Files
 
-Handles:
+### 📄 `rag_backend.py`
+
+Handles backend logic:
 
 * Data loading
-* Chunking
-* Embeddings
-* Vector DB
-* Retrieval
-* LLM responses
+* Text chunking
+* Embedding generation
+* Vector DB creation
+* Semantic retrieval
+* LLM response generation
 
-### `app.py`
+---
 
-Handles:
+### 📄 `app.py`
+
+Handles frontend logic:
 
 * Gradio UI
 * Chat interface
-* Frontend logic
+* User interaction
+* Chat history
 
 ---
 
 # ⚙ How It Works
 
-## 1. Load Dataset
+### 1. Load Dataset
 
-```text
+```text id="data1"
 products_catalog_v2.csv
 ```
 
-## 2. Chunking
+### 2. Chunking
 
-* Chunk size: 500
+* Chunk Size: 500
 * Overlap: 100
 
-## 3. Embeddings
+### 3. Embeddings
 
 * Model: all-MiniLM-L6-v2
 
-## 4. Vector DB
+### 4. Vector Database
 
 * ChromaDB stores embeddings
 
-## 5. Retrieval
+### 5. Retrieval
 
 * Similarity search (k=8)
 
-## 6. Response Generation
+### 6. Response Generation
 
-* LLM: llama-3.3-70b-versatile via Groq
+* LLM: llama-3.3-70b-versatile via Groq API
+
+---
 
 # 🚀 Installation
 
-```bash
-git clone https://github.com/romesaaleem/TechProduct_RAG_System.git
-cd TechProduct_RAG_System
+### 1. Install dependencies
+
+```bash id="inst1"
 pip install -r requirements.txt
+```
+
+---
+
+### 2. Create `.env` file
+
+```env id="env1"
+GROQ_API_KEY=your_groq_api_key_here
+HF_TOKEN=your_huggingface_token_here
+```
+
+---
+
+### 3. Add dataset
+
+```text id="data2"
+products_catalog_v2.csv
 ```
 
 ---
 
 # ▶ How to Run the Project
 
-## 1. Create `.env`
-
-```env
-GROQ_API_KEY=your_groq_api_key_here
-HF_TOKEN=your_huggingface_token_here
-```
-
-## 2. Add Dataset
-
-```text
-products_catalog_v2.csv
-```
-
-## 3. Run App
-
-```bash
+```bash id="run1"
 python app.py
 ```
 
-## 4. Open Browser
+Then open:
 
-```text
+```text id="run2"
 http://127.0.0.1:7860
 ```
 
@@ -178,7 +239,7 @@ http://127.0.0.1:7860
 # 💬 Sample Queries
 
 * Best gaming laptop under budget
-* Show HP Victus specs
+* Show HP Victus specifications
 * RTX laptops under 1500$
 * Best battery phone
 * Lenovo Legion price
@@ -187,10 +248,12 @@ http://127.0.0.1:7860
 
 # 🌐 Deployment
 
-* Hugging Face Spaces
-* Gradio UI
+This project can be deployed using:
 
-### Secrets Required:
+* Hugging Face Spaces
+* Gradio Interface
+
+### 🔐 Required Secrets:
 
 * GROQ_API_KEY
 * HF_TOKEN
@@ -200,9 +263,10 @@ http://127.0.0.1:7860
 # 📊 Results
 
 * Improved semantic search accuracy
-* Better intent understanding
+* Better understanding of user intent
 * Faster product discovery
-* Context-aware responses
+* Context-aware AI responses
+* Real-time chatbot interaction
 
 ---
 
@@ -213,15 +277,15 @@ http://127.0.0.1:7860
 * Recommendation engine
 * Multi-language support
 * User authentication
-* Cloud vector DB
+* Cloud vector database
 
 ---
 
 # 📁 Project Configuration Files
 
-## requirements.txt
+## 📄 requirements.txt
 
-```txt
+```txt id="req1"
 pandas
 langchain
 langchain-community
@@ -235,26 +299,39 @@ groq
 python-dotenv
 ```
 
-## .env
+---
 
-```env
+## 🔐 .env
+
+```env id="env2"
 GROQ_API_KEY=your_groq_api_key_here
 HF_TOKEN=your_huggingface_token_here
 ```
 
-## .gitignore
+---
 
-```gitignore
+## 🚫 .gitignore
+
+```gitignore id="git1"
 .env
 __pycache__/
 *.pyc
 venv/
 ```
 
+---
 
-**Author
-**
+# 👩‍💻 Author
+
 **Romesa Aleem**
-📧 [romesaaleem29@gmail.com](mailto:romesaaleem29@gmail.com)
-🔗 LinkedIn Profile
 
+📧 Email: [romesaaleem29@gmail.com](mailto:romesaaleem29@gmail.com)
+🔗 LinkedIn: [https://www.linkedin.com/in/romesa-aleem-4a53b7248/](https://www.linkedin.com/in/romesa-aleem-4a53b7248/)
+
+---
+
+If you want next upgrade, I can:
+
+* design your **RAG architecture diagram (high-quality PNG for GitHub)**
+* convert this into a **LinkedIn viral project post**
+* or turn it into a **portfolio case study for interviews (very strong impact)**

@@ -1,14 +1,3 @@
-Here is your **fully cleaned, structured, GitHub-ready README.md (final version)** with:
-
-* Clickable Table of Contents
-* Clean professional formatting
-* Architecture diagram section added
-* No `git clone` (as requested)
-* Recruiter-ready structure
-* Proper headings + flow
-
----
-
 # 📌 TechProduct_RAG_System
 
 An AI-powered ecommerce chatbot built using **Retrieval-Augmented Generation (RAG)** architecture for intelligent product search and context-aware responses.

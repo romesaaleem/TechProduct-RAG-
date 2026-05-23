@@ -48,7 +48,7 @@ A user asks a question → system retrieves relevant products → AI generates f
 
 ### Architecture Diagram
 
-![Architecture Diagram](./rag_architecture _diagram.jpeg)
+![Architecture Diagram](./rag_architecture_diagram.jpeg)
 
 ---
 

@@ -51,11 +51,7 @@ A user asks a question → system retrieves relevant products → AI generates f
 👉 Add your image here:
 
 ```md id="arch1"
-![RAG System Architecture](assets/rag_architecture.png)
-```
-
-📌 Suggested placement:
-`assets/rag_architecture.png`
+![RAG System Architecture](assets/rag_architechture_diagram.jpeg)
 
 ---
 
@@ -295,17 +291,6 @@ python-dotenv
 ```env id="env2"
 GROQ_API_KEY=your_groq_api_key_here
 HF_TOKEN=your_huggingface_token_here
-```
-
----
-
-## .gitignore
-
-```gitignore id="git1"
-.env
-__pycache__/
-*.pyc
-venv/
 ```
 
 ---

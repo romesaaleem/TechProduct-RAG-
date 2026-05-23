@@ -52,7 +52,7 @@ A user asks a question → system retrieves relevant products → AI generates f
 
 ---
 
-### Workflow
+# Workflow
 
 1. Load product catalog (CSV)
 2. Convert data into LangChain documents

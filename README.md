@@ -1,10 +1,10 @@
-# 📌 TechProduct_RAG_System
+# TechProduct_RAG_System
 
 An AI-powered ecommerce chatbot built using **Retrieval-Augmented Generation (RAG)** architecture for intelligent product search and context-aware responses.
 
 ---
 
-# 📑 Table of Contents
+# Table of Contents
 
 * [Overview](#overview)
 * [System Architecture](#system-architecture)
@@ -24,7 +24,7 @@ An AI-powered ecommerce chatbot built using **Retrieval-Augmented Generation (RA
 
 ---
 
-# 📖 Overview
+# Overview
 
 **TechProduct_RAG_System** is an AI-powered ecommerce assistant that enables users to search and retrieve product information using natural language queries.
 
@@ -38,15 +38,15 @@ The system improves product discovery by combining:
 
 ---
 
-# 📊 System Architecture
+# System Architecture
 
-### 💡 How the system works in simple terms:
+### How the system works in simple terms:
 
 A user asks a question → system retrieves relevant products → AI generates final answer.
 
 ---
 
-### 🧠 Architecture Diagram
+### Architecture Diagram
 
 👉 Add your image here:
 
@@ -59,7 +59,7 @@ A user asks a question → system retrieves relevant products → AI generates f
 
 ---
 
-### ⚙ Workflow
+### Workflow
 
 1. Load product catalog (CSV)
 2. Convert data into LangChain documents
@@ -74,7 +74,7 @@ A user asks a question → system retrieves relevant products → AI generates f
 
 ---
 
-# ❗ Problem Statement
+# Problem Statement
 
 Traditional ecommerce search systems:
 
@@ -90,7 +90,7 @@ Traditional ecommerce search systems:
 
 ---
 
-# ✨ Features
+# Features
 
 * AI-powered ecommerce chatbot
 * Semantic product search
@@ -104,7 +104,7 @@ Traditional ecommerce search systems:
 
 ---
 
-# 🛠 Technologies Used
+# Technologies Used
 
 ### Programming Language
 
@@ -127,9 +127,9 @@ Traditional ecommerce search systems:
 
 ---
 
-# 📂 Project Files
+# Project Files
 
-### 📄 `rag_backend.py`
+### `rag_backend.py`
 
 Handles backend logic:
 
@@ -142,7 +142,7 @@ Handles backend logic:
 
 ---
 
-### 📄 `app.py`
+### `app.py`
 
 Handles frontend logic:
 
@@ -153,7 +153,7 @@ Handles frontend logic:
 
 ---
 
-# ⚙ How It Works
+# How It Works
 
 ### 1. Load Dataset
 
@@ -184,7 +184,7 @@ products_catalog_v2.csv
 
 ---
 
-# 🚀 Installation
+# Installation
 
 ### 1. Install dependencies
 
@@ -211,7 +211,7 @@ products_catalog_v2.csv
 
 ---
 
-# ▶ How to Run the Project
+# How to Run the Project
 
 ```bash id="run1"
 python app.py
@@ -225,7 +225,7 @@ http://127.0.0.1:7860
 
 ---
 
-# 💬 Sample Queries
+# Sample Queries
 
 * Best gaming laptop under budget
 * Show HP Victus specifications
@@ -235,21 +235,21 @@ http://127.0.0.1:7860
 
 ---
 
-# 🌐 Deployment
+# Deployment
 
 This project can be deployed using:
 
 * Hugging Face Spaces
 * Gradio Interface
 
-### 🔐 Required Secrets:
+### Required Secrets:
 
 * GROQ_API_KEY
 * HF_TOKEN
 
 ---
 
-# 📊 Results
+# Results
 
 * Improved semantic search accuracy
 * Better understanding of user intent
@@ -259,7 +259,7 @@ This project can be deployed using:
 
 ---
 
-# 🔮 Future Improvements
+# Future Improvements
 
 * Memory-based chatbot
 * Hybrid search (BM25 + embeddings)
@@ -270,9 +270,9 @@ This project can be deployed using:
 
 ---
 
-# 📁 Project Configuration Files
+# Project Configuration Files
 
-## 📄 requirements.txt
+## requirements.txt
 
 ```txt id="req1"
 pandas
@@ -290,7 +290,7 @@ python-dotenv
 
 ---
 
-## 🔐 .env
+## .env
 
 ```env id="env2"
 GROQ_API_KEY=your_groq_api_key_here
@@ -299,7 +299,7 @@ HF_TOKEN=your_huggingface_token_here
 
 ---
 
-## 🚫 .gitignore
+## .gitignore
 
 ```gitignore id="git1"
 .env
@@ -310,17 +310,13 @@ venv/
 
 ---
 
-# 👩‍💻 Author
+# Author
 
 **Romesa Aleem**
 
 📧 Email: [romesaaleem29@gmail.com](mailto:romesaaleem29@gmail.com)
+
 🔗 LinkedIn: [https://www.linkedin.com/in/romesa-aleem-4a53b7248/](https://www.linkedin.com/in/romesa-aleem-4a53b7248/)
 
 ---
 
-If you want next upgrade, I can:
-
-* design your **RAG architecture diagram (high-quality PNG for GitHub)**
-* convert this into a **LinkedIn viral project post**
-* or turn it into a **portfolio case study for interviews (very strong impact)**

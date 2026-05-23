@@ -210,7 +210,7 @@ products_catalog_v2.csv
 python app.py
 ```
 
-Then open:
+Then open the URL such as:
 
 ```text id="run2"
 http://127.0.0.1:7860

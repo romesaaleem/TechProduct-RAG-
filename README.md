@@ -48,10 +48,7 @@ A user asks a question → system retrieves relevant products → AI generates f
 
 ### Architecture Diagram
 
-👉 Add your image here:
-
-```md id="arch1"
-![RAG System Architecture](assets/rag_architechture_diagram.jpeg)
+![RAG System Architecture](rag_architechture_diagram.jpeg)
 
 ---
 

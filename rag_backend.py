@@ -147,4 +147,4 @@ If product is not in context, say "Not available in catalog".
         return response.choices[0].message.content
 
     except Exception:
-        return "⚠️ Limit reached. Try again later."
+        return "⚠️ Limit reached or API error. Try again later."
